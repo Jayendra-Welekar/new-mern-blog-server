@@ -1,0 +1,24 @@
+
+
+# POST http://localhost:3000/get-blog
+# Content-Type: application/json
+
+# {
+#     "blog_id": "Title-1FVuRewb1AlrzCFPw9RJRF"
+# }
+
+POST http://localhost:3000/get-minimal-profile
+Content-Type: application/json
+
+{
+    "userId": "65bd3c77e996762e637c227c"
+}
+
+
+# POST http://localhost:3000/signin
+# Content-Type: application/json
+
+# {
+#     "email": "new@gmail.com",
+#     "password": "Welekar@2003"
+# }
