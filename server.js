@@ -223,7 +223,7 @@ server.post("/blog-editor/upload-img", upload.single('img'), async (req, res) =>
 
 const sortArray = (blogs, following)=>{
     const followed = blogs.filter(blog => following.includes(blog.author.personal_info.username))
-    const notFollowed = blogs.filter(blog => !following.includes(!blog.author.personal_info.username))
+    const notFollowed = blogs.filter(blog => !following.includes(blog.author.personal_info.username))
     return [...followed, ...notFollowed]
 }
 
